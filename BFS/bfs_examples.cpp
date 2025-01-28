@@ -11,7 +11,7 @@ struct TreeNode {
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-}
+};
 
 
 class Solution {
@@ -20,7 +20,7 @@ public:
  * Given the root of a binary tree, imagine yourself standing on the right side of it,
  * return the values of the nodes you can see ordered from top to bottom.
 */
-    vector<int> rightSideView(TreeNode* root) {
+    vector<int> rightSideViewNaive(TreeNode* root) {
         vector<int> result;
         if (!root) {
             return result;

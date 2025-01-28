@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     // most easy but not good practice way to random an int.
     int num = rand();
-    int num_in_range = 5 + rand() % 5  // range between [5, 9]
+    int num_in_range = 5 + rand() % 5;  // range between [5, 9]
     // Initialize a random number generator with a random seed
     random_device rd;
     mt19937 gen(rd());
